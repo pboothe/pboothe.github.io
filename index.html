@@ -1,1 +1,297 @@
-Hi
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peter Boothe - Résumé</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 { color: #4682B4; } /* Slate Blue */
+        h2 { color: #5A86A2; } /* Halfway between Slate Blue and Slate Gray */
+        a, a:visited { color: #23415A; } /* Halfway between Slate Blue and Black */
+        
+        .section { margin-bottom: 20px; }
+        
+        .job { margin-bottom: 15px; }
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 10px;
+        }
+        .job-company, .job-title { 
+            font-weight: bold;
+            flex: 1;
+        }
+        .job-title { text-align: center; }
+        .job-date { 
+            text-align: right;
+            flex: 1;
+        }
+        .job-details { font-style: italic; }
+        
+        dl { margin-left: 20px; }
+        dt {
+            font-weight: bold;
+            float: left;
+            clear: left;
+            width: 120px;
+        }
+        dd {
+            margin-left: 130px;
+            margin-bottom: 10px;
+        }
+        dl::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .profile-picture {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 80px;
+            height: auto;
+            border-radius: 5px;
+        }
+        
+        header {
+            position: relative;
+            padding-right: 100px;
+        }
+        
+        .goal-section {
+            text-align: center;
+            margin-bottom: 2em;
+            position: relative;
+        }
+        .goal {
+            font-size: larger;
+            color: #5A86A2;
+            margin: 1em 0;
+            padding-right: 170px;
+        }
+        .sidenote {
+            font-size: smaller;
+            color: #708090;
+            font-style: italic;
+            line-height: 1.2;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 140px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="me.jpg" alt="Peter Boothe" class="profile-picture">
+        <h1>Peter Boothe</h1>
+        <dl>
+            <dt>Location</dt>
+            <dd>Amstelveen, NL.  
+                <br> 
+                I am not currently interested in relocating, but remote work could be an option.  
+                Because I have family and friends in both SF and NYC, I am definitely open to jobs that require travel to those 
+                cities.</dd>
+            
+            <dt>Phone</dt>
+            <dd>Available upon request, both US and NL numbers available.</dd>
+            
+            <dt>Email</dt>
+            <dd><a href="mailto:pboothe&#64;gmail.com">pboothe&#64;gmail.com</a>.  
+                <br>
+                Like everyone, I am drowning in email. I apologize for the ways this makes me a bad correspondent.</dd>
+            
+            <dt>Website</dt>
+            <dd><a href="https://github.com/pboothe">github.com/pboothe</a></dd>
+        </dl>
+    </header>
+
+    <main>
+        <section class="section goal-section">
+            <p class="goal">
+                I like to design, build, and run good<sup>*</sup> software systems and help others do the same. 
+                I specialize in taking complex systems that work and making them better and simpler while keeping them working.
+            </p>
+            <p class="sidenote"><sup>*</sup> - useful, robust, reliable, secure, scalable, maintainable, efficient, etc.</p>
+        </section>
+
+        <section class="section">
+            <h2>Experience</h2>
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-company"><a href="https://www.triplepat.com">Triple Pat</a>, Amsterdam, NL</span>
+                    <span class="job-title">Founder, Developer, CEO</span>
+                    <span class="job-date">2024 &ndash; present</span>
+                </div>
+                <p>Founded Triple Pat, a SaaS company dedicated to providing SREs with confidence that the reason their 
+                alarms are silent is because the systems are working, not because the alarm system is down. Wrote webservice 
+                and distributed high-availability DB. Deployed across multiple clouds and continents. Wrote Android and iOS 
+                applications.</p>
+                <dl>
+                    <dt>Languages</dt>
+                    <dd>Go, Shell, Swift, Kotlin, Node, Javascript</dd>
+                    <dt>Technologies</dt>
+                    <dd>IaaS, cloud services, mobile development, CRDTs, distributed databases, devops, SRE, AI, prompt 
+                        engineering, SSG, CI/CD</dd>
+                </dl>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-company"><a href="https://www.optiver.com">Optiver</a>, Amsterdam, NL</span>
+                    <span class="job-title">Software Engineer, Individual Contributor</span>
+                    <span class="job-date">2021 &ndash; 2024</span>
+                </div>
+                <p>C++ developer in charge of the market information software stack encoding and transferring market data 
+                from point of receipt to the systems that make trading decisions. Responsible for 10% of deployed binaries 
+                and libraries used by more than 25% of production systems at 1000+ person company. Refactored the decade-old 
+                information stack to increase flexibility and efficiency without forcing change on existing users. Held all 
+                work to high efficiency standards, as wasted microseconds meant real monetary loss. Also did critical work 
+                on: the metrics system; the logfile and packet-capture pipelines; the ETL system; and addressing packet loss 
+                in intra-datacenter multicast feeds. Taught new-hire orientation classes in networking, multicast, and market 
+                information processing.</p>
+                <dl>
+                    <dt>Languages</dt>
+                    <dd>C++, Python, Bash</dd>
+                    <dt>Technologies</dt>
+                    <dd>Userspace networking, multicast, CI/CD, TCP, Linux kernel networking, protocol buffers, code 
+                        generation, software transactional memory, multiprocessing, performance analysis</dd>
+                </dl>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-company"><a href="https://www.google.com">Google</a>, New York, NY</span>
+                    <span class="job-title">Software Engineer, Tech Lead, Team Leader</span>
+                    <span class="job-date">2013 &ndash; 2021</span>
+                </div>
+                <p>Became tech lead of the Measurement Lab project (a Vint Cerf-founded Google partnership with external 
+                non-profit Code for Science and Society — <a href="https://measurementlab.net">https://measurementlab.net</a>) 
+                when the project was six years old. Wrote the project mission, aligned the team with the mission, and 
+                designed and developed software as a team in pursuit of that mission. Stewarded the world's largest open 
+                database of Internet performance data (kept it open and grew it from tens of terabytes to more than 2 PB). 
+                Grew the daily test volume from 15000 tests/day to millions, in large part by launching the "how fast is my 
+                internet" feature to Google Search. By 2021, every day at least one of 1000 internet users used the speed 
+                test and contributed data. Was responsible for the entire stack, from the bill of materials at each 
+                datacenter and wiring diagrams for remote hands, up through Kubernetes with custom plugins and the 
+                measurement services we ran, all the way up to the ETL pipeline that made the data available to the public. 
+                Performed outreach to encourage data use and to get measurement racks into third-party colocations across the 
+                world.</p>
+                <dl>
+                    <dt>Languages</dt>
+                    <dd>Go, Python, C, C++, Java, Shell, Javascript, Jsonnet</dd>
+                    <dt>Technologies</dt>
+                    <dd>Docker, Kubernetes, CI/CD, Google Cloud, TCP, Linux kernel internals, SQL, Bigquery</dd>
+                    <dt>Open source software designed and written includes</dt>
+                    <dd>NDT-server, packet-headers, uuid, uuid-annotator, pusher, index2ip, scraper — all available at 
+                        <a href="https://github.com/m-lab/">https://github.com/m-lab/</a></dd>
+                </dl>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>References</h2>
+            <p>References available upon request.</p>
+        </section>
+
+        <section class="section">
+            <h2>Academia</h2>
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-company"><a href="https://manhattan.edu">Manhattan College</a> (now Manhattan 
+                        University), Bronx, NY</span>
+                    <span class="job-title">Assistant Professor</span>
+                    <span class="job-date">2008 &ndash; 2013</span>
+                </div>
+                <p>Hired as an assistant professor and as the first who was only a computer scientist. Helped the Mathematics 
+                and Computer Science Department transition into two departments: the Mathematics Department and the Computer 
+                Science Department. Was a founding member of the newly-formed computer science department.</p>
+                <dl>
+                    <dt>Courses Taught</dt>
+                    <dd>Algorithms, Software Engineering, Object-Oriented Design (in Java), CS1 (in Python), CS2 (in C++), 
+                        Operating Systems, Mobile Development, Independent Study in Reversible Computing, Independent Study 
+                        in Program Visualization, and Calculus</dd>
+                    <dt>Student Achievements</dt>
+                    <dd>Coached the IEEE MicroMouse team that won the competition. Coached Manhattan College ACM Programming 
+                        Contest team. Found external clients with real-world problems for students in Software Engineering, 
+                        and helped students work with those clients. Published multiple research papers with undergraduate 
+                        student co-authors.</dd>
+                </dl>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Dissertation</h2>
+            <p><strong>Title:</strong> <em><a href="https://scholarsbank.uoregon.edu/items/4125fb21-20c0-4904-87fb-425829126000">
+                Measuring the Internet AS Graph and its Evolution</a></em></p>
+            <p><strong>Advisor:</strong> Andrzej Proskurowski</p>
+            <p><strong>Description:</strong> Is traffic on the Internet centralizing or decentralizing over time? How robust 
+            is the Internet to various forms of political attack? To solve this problem I processed terabytes of data, proved 
+            problems to be NP-complete, and discovered and developed approximation algorithms for those problems. I found 
+            that Internet traffic is not decentralizing over time.</p>
+        </section>
+
+        <section class="section">
+            <h2>Graduate School</h2>
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-company"><a href="https://www.uoregon.edu">University of Oregon</a>, Eugene, Oregon</span>
+                    <span class="job-title">Graduate Teaching Fellow, Graduate Research Fellow</span>
+                    <span class="job-date">2002 &ndash; 2009</span>
+                </div>
+                <dl>
+                    <dt>Network Services</dt>
+                    <dd>Wrote (in Perl) some tricky algorithmic parts of NetDOT.</dd>
+                    <dt>Beyond BGP Project</dt>
+                    <dd>Analyzed piles of traceroute data to assess the stability of Internet routes. Analyzed piles of BGP 
+                        data to determine how commonly IP address hijacking occurs.</dd>
+                    <dt>Contests</dt>
+                    <dd>On the winning team of the departmental programming contest every year I entered (6 years in a row).</dd>
+                    <dt>Taught</dt>
+                    <dd>Instructor for Data Structures lab and Advanced Python Programming. Teaching assistant for many other 
+                        classes.</dd>
+                </dl>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Ancient History</h2>
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-company">Gordian, Costa Mesa, California</span>
+                    <span class="job-title">Software Engineer</span>
+                    <span class="job-date">2000 &ndash; 2002</span>
+                </div>
+                <p>Wrote a GUI, in Java, which configured headless network devices.</p>
+            </div>
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-company"><a href="https://www.hmc.edu">Harvey Mudd College</a>, Claremont, California</span>
+                    <span class="job-title">BS / Joint Major in Mathematics and Computer Science</span>
+                    <span class="job-date">1996 &ndash; 2000</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="text-align: center; margin-top: 20px; font-size: 0.8em;">
+        <p>
+            <a href="https://validator.w3.org/nu/?doc=https://pboothe.github.io/">HTML5</a>
+            <span style="margin: 0 10px;">|</span>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://pboothe.github.io/">CSS</a>
+        </p>
+    </footer>
+</body>
+</html>
